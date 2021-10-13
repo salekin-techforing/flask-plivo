@@ -25,7 +25,7 @@ def reply_sms():
     response.add(
         plivoxml.MessageElement(
             "Thank you, we have received your request.",
-            src='12056549467',  
+            src=to_number,  
             dst=from_number))
     print(response.to_string())  # Prints the XML
     # Returns the XML
